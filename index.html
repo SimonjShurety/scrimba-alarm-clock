@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="flex container">
+        <p id="current-time-display" class="current-time-display">--:--:--</p>
+        <p id="alarm-time-display" class="alarm-time-display">--:--:--</p>
+        <p id="alarm-message-display"></p>
+
+        <form class="alarm-inputs">
+            <label for="hours-input">Hours</label>
+            <input id="hours-input" type="number" name="hour" placeholder="00" min="0" max="24" required />
+            <label for="minutes-input">Minutes</label>
+            <input id="minutes-input" type="number" name="min" min="0" max="60" placeholder="00" required />
+            <button type="submit" id="set-alarm-button">Set alarm</button>
+        </form>
+    </div>
+    <script src="index.pack.js"></script>
+</body>
+
+</html>
